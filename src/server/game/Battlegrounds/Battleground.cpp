@@ -809,7 +809,7 @@ void Battleground::EndBattleground(uint32 winner)
                 int32 Honor;
                 if (team == winner)
                 {
-                    BattlegroundScoreMap::const_iterator score = PlayerScores.find(player->GetGUID());
+                    //BattlegroundScoreMap::const_iterator score = PlayerScores.find(player->GetGUID());
                     //int32 kills = score->second->GetHonorableKills();
                     RewardArena(player, true);
                     //random battleground 300, random arena 100.
