@@ -849,7 +849,7 @@ class TC_GAME_API PlayerScript : public UnitScript
         virtual void OnTextEmote(Player* /*player*/, uint32 /*textEmote*/, uint32 /*emoteNum*/, ObjectGuid /*guid*/) { }
 
         // Called in Spell::Cast.
-        virtual void OnSpellCast(Player* /*player*/, Spell* /*spell*/, bool /*skipCheck*/, bool SkipOtherCode) { }
+        virtual void OnSpellCast(Player* /*player*/, Spell* /*spell*/, bool /*skipCheck*/, bool /*SkipOtherCode*/) { }
 
         // Called in Spell::Cast after spell is actually casted
         virtual void OnSuccessfulSpellCast(Player* /*player*/, Spell* /*spell*/) { }
