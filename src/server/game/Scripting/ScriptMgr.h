@@ -1191,9 +1191,9 @@ protected:
     SocialScript(const char* name);
 public:
 
-    virtual void OnHandleContactListOpcode(bool& SkipCoreCode, WorldSession* /*me*/, WorldPacket& /*recv_data*/, Player* /*player*/) {}
+    virtual void OnHandleContactListOpcode(bool& /*SkipCoreCode*/, WorldSession* /*me*/, WorldPacket& /*recv_data*/, Player* /*player*/) {}
     virtual void OnHandleWhoOpcode(WorldSession* /*me*/, WorldPackets::Who::WhoRequestPkt& /*whoRequest*/, Player* /*player*/, bool& /*Skip*/) {}
-    virtual void OnBroadcastToFriendListers(bool& SkipCoreCode, SocialMgr* /*me*/, Player* /*player*/, WorldPacket* /*packet*/, SocialMgr::SocialMap& /*m_socialMap*/) {}
+    virtual void OnBroadcastToFriendListers(bool& /*SkipCoreCode*/, SocialMgr* /*me*/, Player* /*player*/, WorldPacket* /*packet*/, SocialMgr::SocialMap& /*m_socialMap*/) {}
     virtual void OnSendSocialList(PlayerSocial* /*me*/, Player* /*player*/, uint32 /*flags*/, bool& /*SkipCoreCode*/) {}
     virtual void OnGetFriendInfo(SocialMgr* /*me*/, Player* /*player*/, ObjectGuid const& /*friendGUID*/, FriendInfo& /*friendInfo*/, PlayerSocial::PlayerSocialMap /*_playerSocialMap*/, bool& /*Skip*/) {}
     virtual void OnSendFriendStatus(SocialMgr* /*me*/, Player* /*player*/, FriendsResult /*result*/, ObjectGuid const& /*friendGuid*/, bool /*broadcast*/, bool& /*Skip*/) {}
