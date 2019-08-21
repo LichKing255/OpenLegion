@@ -29,8 +29,8 @@ class TC_GAME_API PlayerStorage
 public:
     PlayerStorage(Player* player) : _owner(player) { };
 
-    bool const IsEntryExists(uint32 key);
-    int32 const GetEntry(uint32 key);
+    bool /*const*/ IsEntryExists(uint32 key);
+    int32 /*const*/ GetEntry(uint32 key);
     void SetEntry(uint32 key, int32 value, uint32 timeMs = 0);
 
     bool ClearEntry(uint32 key) { return _container.erase(key) ? true : false; }

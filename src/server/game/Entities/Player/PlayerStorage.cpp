@@ -35,7 +35,7 @@ private:
     int32 const _key;
 };
 
-bool const PlayerStorage::IsEntryExists(uint32 key)
+bool /*const*/ PlayerStorage::IsEntryExists(uint32 key)
 {
     auto search = _container.find(key);
     if (search != _container.end())
@@ -43,7 +43,7 @@ bool const PlayerStorage::IsEntryExists(uint32 key)
     return false;
 }
 
-int32 const PlayerStorage::GetEntry(uint32 key)
+int32 /*const*/ PlayerStorage::GetEntry(uint32 key)
 {
     auto search = _container.find(key);
     if (search != _container.end())
