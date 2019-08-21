@@ -26,8 +26,8 @@ void Trinity::Banner::Show(char const* applicationName, void(*log)(char const* t
     log(" / ___ \\                  | |     / _____)                ");
     log("| |   | |____   ____ ____ | |    | /      ___   ____ ____ ");
     log("| |   | |  _ \\ / _  )  _ \\| |    | |     / _ \\ / ___) _  )");
-    log("| |___| | | | ( (/ /| | | | |____| \____| |_| | |  ( (/ / ");
-    log(" \\_____/| ||_/ \\____)_| |_|_______)______)___/|_|   \____)");
+    log("| |___| | | | ( (/ /| | | | |____| \\____| |_| | |  ( (/ / ");
+    log(" \\_____/| ||_/ \\____)_| |_|_______)______)___/|_|   \\____)");
     log("        |_|      ");
 log(" https://github.com/openlcoreteam/OpenLCore        ");
 log(" OpenLCore is based on MagicStorm/AshamaneCore/TrinityCore        ");
